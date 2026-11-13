@@ -1,114 +1,169 @@
-  <!DOCTYPE html>
-  <html lang="th">
+<!doctype html>
+<html lang="th">
   <head>
-  <script>
-    function toggleDark() {
-      document.body.classList.toggle("dark");
-    }
-  </script>
+    <script>
+      function toggleDark() {
+        document.body.classList.toggle("dark");
+      }
+    </script>
     <style>
+      #contact_div {
+        padding: 2rem;
+      }
+      #cool_text_footer {
+        font-size: large;
+      }
+      #cool_line_footer {
+        padding: 2rem;
+        max-width: 20%;
+        gap:0px;
+      }
+
+      #ghub_link{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: x-large;
+        transition-duration: 300ms;
+      }
+      #ghub_link:hover{
+        color:white;
+      }
+      img{
+        border-radius: 9999999px;
+        aspect-ratio: 1/1;
+        box-shadow: 4px 6px 15px #1e1e2e;
+      }
+      header {
+        text-shadow: 2px 3px 8px #1e1e2e;
+        gap: 3rem;
+        min-width: 50%;
+        display:flex;
+        flex-direction: row;
+      }
+      footer {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        background: #1e1e2e;
+        min-width: 100vw;
+      }
       body.dark {
         background: #1e1e2e;
         color: #f0f0f0;
       }
-      #dark{
+      #dark {
         margin: 20px;
       }
-      #contact{
-        display:flex;
-        flex-direction:column;
-        gap:3px;
+      #contact {
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
       }
-      .btn{
-        display:flex;
-        justify-items:center;
-        align-items:center;
+      .btn {
+        display: flex;
+        justify-items: center;
+        align-items: center;
         max-width: 74px;
-        background:palegreen;
-        padding:3px;
+        background: palegreen;
+        padding: 3px;
         border-radius: 5px;
         transition-duration: 300ms;
-        
-        
       }
-      .btn:hover{
-        background:white;
-        
+      .btn:hover {
+        background: white;
       }
       body {
-        max-width:720px;
-        margin:0 auto;
+        gap: 3rem;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vw;
+        margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(to top right,blue,purple);
-        color:white;
+        background: linear-gradient(to top right, blue, purple);
+        color: white;
       }
       h1 {
-        color:white;
+        color: white;
       }
       section {
-        background-color:white;
-        color:black;
+        box-shadow: 4px 6px 15px #1e1e2e;
+        background-color: white;
+        color: black;
         padding: 16px 24px;
         margin-bottom: 16px;
         border-radius: 12px;
       }
+      .midsec {
+        min-width: 50%;
+      }
     </style>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>CV ของฉัน</title>
   </head>
   <body>
     <header>
-    <img src="potrait.png" alt="my picture" width="120">
-    <a href="https://github.com/penkub">Github</a>
-    <h1>
-      Peechayapat Sathirakul
-    </h1>
-    <p>
-      A student from MWIT 36.3
-    </p>
+      <img src="potrait.png" alt="my picture" width="150" />
+      <div>
+      <a id="ghub_link" href="https://github.com/penkub">Github</a>
+      <h1>Peechayapat Sathirakul</h1>
+      <p>A student from MWIT 36.3</p>
+      </div>
     </header>
-    <section>
-    <h2>
-      การศึกษา
-    </h2>
-    <ul>
-      <li>โรงเรียนจิตรลดา อ.1-ป.6</li>
-      <li>โรงเรียนสามเสนวิทยาลัย ม.1-ม.3</li>
-      <li>โรงเรียนมหิดลวิทยานุสรณ์ ม.4...</li>
-    </ul>
-    </section>
-    <section>
-    <h2>
-      ทักษะ
-    </h2>
-    <ul>
-      <li>HTML และ CSS</li>
-      <li>React</li>
-      <li>Next.js</li>
-      <li>Node.js</li>
-      <li>Express.js</li>
-      <li>SQL</li>
-      <li>MongoDB</li>
-      <li>Socket.IO</li>
-      <li>Javascript</li>
-      <li>Python</li>
-      <li>C</li>
-      <li>C++</li>
-      <li>Git</li>
-    </ul>
-    </section>
+    <div class="midsec">
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>CD 59</li>
+          <li>SS 73</li>
+          <li>MWIT 36</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Related Skills</h2>
+        <ul>
+          <li>HTML และ CSS</li>
+          <li>Tailwind CSS</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>SQL</li>
+          <li>MongoDB</li>
+          <li>Socket.IO</li>
+          <li>Javascript</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Git</li>
+        </ul>
+      </section>
+    </div>
     <footer>
-      <h2>
-        ช่องทางการติดต่อ
-      </h2>
+        <div id="cool_line_footer">
+          <h1>Peechayapat Sathirakul</h1>
+          <p id="cool_text_footer">Thankyou for reading this CV throughly. I hope to collaborate with you in the future. Feel free to contact me if you need.</p>
+        </div>
+      <div id="contact_div">
+      <h1>My Contacts</h1>
+      <div>
       <ul id="contact">
-        <li>call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  : 081xxxxxxx</li>
-        <li>E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  : thisisafakemail@whatevermail.com</li>
-          <a  class="btn" href="instagram.com">Instagram</a>
+        <li>
+          call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+          081xxxxxxx
+        </li>
+        <li>
+          E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+          thisisafakemail@whatevermail.com
+        </li>
+        <li>Instagram : somerandominstagramusername</li>
       </ul>
-      <button class = "btn" id = "dark" onClick="toggleDark()" >
-        dark mode
-      </button>
+      <button class="btn" id="dark" onClick="toggleDark()">dark mode</button>
+      </div>
     </footer>
   </body>
-  </html>
+</html>
